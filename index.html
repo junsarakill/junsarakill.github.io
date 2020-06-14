@@ -2,71 +2,9 @@
 <html>
 <head>
 	<title>프로젝트인것이다</title>
-	<style type="text/css">
-		* {
-			padding: 0;
-			margin: 0;
-		}
-		li {
-			list-style-type: none;
-		}
-		.clear {
-			clear: both;
-		}
-		#logo {
-			float: left;
-			margin-top: 10px;
-		}
-		#top {
-			float: right;
-			margin: 30px 20px 0 0;
-		}
-		#page {
-			width:1300px;
-			margin : auto;
-			border: 0px solid red;
-		}
-		header {
-			width: 1300px;
-			height: 100px;
-			margin-top: 10px;
-			border : 0px solid red;
-		}
-		nav {
-			width: 1300px;
-			height: 70px;
-			margin-top: 10px;
-			border: 0px solid red;
-
-		}
-		nav li {
-			display : inline-block;
-			margin: 20px 30px;
-		}
-		section {
-			float: left;
-			margin-top: 10px;
-			border: 0px solid red;
-			padding-bottom: 20px;
-			padding-right: 20px;	
-		}
-
-		aside {
-			float: right;
-			border: 0px solid red;
-			margin-top: 10px;
-		}
-		aside li {
-			text-align: right;
-			margin-bottom: 30px;
-		}
-		footer {
-			width: 1300px;
-			height:100px;
-			margin: 10px 0 10px 0;
-			border: 0px solid red;
-		}
-		#sub1 {
+		<link rel="stylesheet" type="text/css" href="project01.css">
+		<style type="text/css">
+					#sub1 {
 		}
 		#sub1 li {
 			display: inline-block;
@@ -92,7 +30,9 @@
 		#sub2 img:hover{
 			transform: scale(1.1);
 		}
-		#sub3 {}
+		#sub3 {
+			padding-left: 60px;
+		}
 		#sub3 li {
 			display:inline-block;
 			margin-right:200px;
@@ -115,7 +55,10 @@
 		float: right; 
 		margin: 10px 10px 0 0;
 	}
-	</style>
+		#text_gray {
+			color:gray;
+		}
+		</style>
 </head>
 <body id="page">
 	<header>
@@ -126,9 +69,10 @@
 			로그인 | 회원가입 | <a href="8thassignment_20200838_JK.html"target=_blank>마이페이지</a> | 고객센터
 		</div>
 	</header>
+	<hr>
 	<div class="clear"></div>
 	<nav>
-		<ul>
+		<ul><b>
 			<li>감염병</li>
 			<li>건강정보</li>
 			<li>정책정보</li>
@@ -137,9 +81,11 @@
 			<li>간행물,통계</li>
 			<li>민원,정보공개</li>
 			<li>기관소개</li>
-			<li><a href="tarkov_usable_site.html"target=_blank>사업별홈페이지</a></li>
+			<li>사업별홈페이지</li>
+		</b>
 		</ul>	
 	</nav>
+	<hr>
 	<div class="clear"></div>
 	<section>
 		<img src="./img/main.PNG" width="1080">
@@ -147,10 +93,11 @@
 	</section>
 	<aside>
 		<ul>
-			<li>사용자별 맞춤메뉴</li>
-			<li>일반인</li>
+			<li>사용자별 맞춤메뉴</li><span id="align_right">
+			<span id="text_gray"><li>일반인</li>
 			<li>연구자</li>
-			<li>언론인</li>
+			<li>언론인</li></span>
+		</ul>
 	</aside>
 	<section>
 		<ul id="sub1">
@@ -164,7 +111,7 @@
 			<li> <img src="./img/service1.png"> <br> 국가별질병정보 </li>
 			<li> <img src="./img/service2.png"> <br> 홍보자료 </li>
 			<li> <img src="./img/service3.png"> <br> 아달의건강소식 </li>
-			<li> <img src="./img/service4.png"> <br> 조직도, 직원찾기 </li>
+			<li> <a href="find_employee"target=_blank><img src="./img/service4.png"> <br> 조직도, 직원찾기</a></li>
 			<li> <img src="./img/service5.png"> <br> 법령, 지침, 서식 </li>
 			<li> <img src="./img/service6.png"> <br> 공고/공시 </li>
 		</ul>
